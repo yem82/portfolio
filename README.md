@@ -1,6 +1,7 @@
-Personal portfolio website 
+## Personal portfolio website 
 
-Technologies:
+## Technologies:
 
-*Node.js
-*React
+* Node.js
+* Express.js
+* React
