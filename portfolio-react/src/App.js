@@ -1,10 +1,10 @@
 import React from 'react';
-import Portfolio from './components/Portfolio';
+import Form from './components/Form';
 
 function App() {
   return (
     <div>
-      <Portfolio />
+      <Form />
     </div>
   );
 }

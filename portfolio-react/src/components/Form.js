@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
-import './Portfolio.scss';
+import './Form.scss';
 import axios from 'axios';
 
-class Portfolio extends Component {
+function validate(firstname, lastname, email, message) {
+  const errors = [];
+
+  if (firstname === '' || lastname === '') {
+    errors.push("name fields can't be empty!");
+  }
+
+  if (email === '') {
+    errors.push("email can't be empty!");
+  }
+  if (email.split("").filter(x => x === "@").length !== 1 || email.indexOf(".") === -1) {
+    errors.push("email should contain '@' and at least one dot");
+  }
+
+  if (message === '') {
+    errors.push("message can't be empty!");
+  }
+
+  return errors;
+}
+class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,6 +31,7 @@ class Portfolio extends Component {
       email: '',
       subject: '',
       message: '',
+      errors: []
     };
 
     this.handleChange = this.handleChange.bind(this)
@@ -26,6 +47,17 @@ class Portfolio extends Component {
 
     const { firstname, lastname, email, subject, message } = this.state;
 
+    const errors = validate(firstname, lastname, email, message);
+      if (errors.length > 0) {
+        this.setState({ errors });
+        return;
+      } else {
+        this.setState({ errors: [] });
+        setTimeout(function(){
+          alert('message sent!');
+          }, 2000);
+      }
+
     const form = await axios.post('/express', {
       firstname,
       lastname,
@@ -36,8 +68,9 @@ class Portfolio extends Component {
   };
 
 render() {
+    const { errors } = this.state
     return (
-        <div>
+      <div>
         <form onSubmit={this.handleSubmit} className="form">
           <h2>Contact:</h2>
           <br/>
@@ -70,14 +103,14 @@ render() {
           <div className="form-group">
             <label> Email:</label>
             <input
-             value={this.state.email}
-             type="text"
-             className="form-control"
-             name="email"
-             onChange={this.handleChange}/>
+              value={this.state.email}
+              type="text"
+              className="form-control"
+              name="email"
+              onChange={this.handleChange}/>
           </div>
-  
-          <div className="form-group has-error">
+
+          <div className="form-group">
             <label> Subject:</label>
             <input
             value={this.state.subject}
@@ -86,7 +119,7 @@ render() {
             name="subject"
             onChange={this.handleChange}/>
           </div>
-        
+
           <div className="form-group">
             <label> Message:</label>
             <textarea
@@ -95,11 +128,18 @@ render() {
             name="message"
             onChange={this.handleChange}/>
           </div>
+
         <button className="btn btn-dark" type="submit">Submit</button>
-        </form>
+        <div id="error" className="errorMessage">
+          <br/>
+        {errors.map(error => (
+          <p key={error}>* {error}</p>
+        ))}
         </div>
+        </form>
+      </div>
     );
   }
 }
 
-export default Portfolio;
+export default Form;
