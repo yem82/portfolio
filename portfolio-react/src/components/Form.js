@@ -71,7 +71,7 @@ render() {
     const { errors } = this.state
     return (
       <div>
-        <form onSubmit={this.handleSubmit} className="form">
+        <form onSubmit={this.handleSubmit} className="form" id="contact">
           <h2>Contact:</h2>
           <br/>
           <div className="row">
