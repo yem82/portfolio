@@ -58,6 +58,7 @@ class Form extends Component {
           }, 2000);
       }
 
+    // eslint-disable-next-line
     const form = await axios.post('/express', {
       firstname,
       lastname,
@@ -73,11 +74,12 @@ render() {
       <div>
         <form onSubmit={this.handleSubmit} className="form" id="contact">
           <h2>Contact:</h2>
+          <p>* required fields</p>
           <br/>
           <div className="row">
           <div className="col">
           <div className="form-group">
-            <label> First name:</label>
+            <label> *First name:</label>
             <input
             value={this.state.firstname}
             type="text"
@@ -89,7 +91,7 @@ render() {
 
           <div className="col">
           <div className="form-group">
-            <label> Last name:</label>
+            <label> *Last name:</label>
             <input
             value={this.state.lastname}
             type="text"
@@ -101,7 +103,7 @@ render() {
           </div>
 
           <div className="form-group">
-            <label> Email:</label>
+            <label> *Email:</label>
             <input
               value={this.state.email}
               type="text"
@@ -121,7 +123,7 @@ render() {
           </div>
 
           <div className="form-group">
-            <label> Message:</label>
+            <label> *Message:</label>
             <textarea
             value={this.state.message}
             className="form-control"
