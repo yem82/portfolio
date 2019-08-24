@@ -6,4 +6,12 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+
+  // overflow-x: hidden;
 }
+
+.background-pic {
+  background-image: url('../src/assets/light-gradient.jpg');
+  background-size: cover;
+  // background-attachment: fixed;
+ }

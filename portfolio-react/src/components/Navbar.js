@@ -28,6 +28,10 @@ class Navbar extends Component {
                 <p>Projects</p></a>
                 </li>
                 <li>
+                <a href="#contact"><i className="far fa-address-book icon"></i>
+                <p>Contact</p></a>
+                </li>
+                <li>
                 <a
                   href="https://github.com/yem82"
                   target="_blank"
@@ -35,9 +39,6 @@ class Navbar extends Component {
                   <i className="fab fa-github icon"></i>
                     <p>GitHub</p>
                   </a>
-                </li>
-                <li>
-                <a href="#contact"><i className="far fa-address-book icon"></i><p>Contact</p></a>
                 </li>
                 <li>
                 <a
