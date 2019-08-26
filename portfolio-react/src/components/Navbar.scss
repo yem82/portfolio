@@ -18,8 +18,9 @@
     color: rgba(29, 28, 27, 0.714);
     // color: rgb(89, 76, 71); brown colour
     text-decoration: none;
-
+    transition-duration: 170ms;
     &:hover{
+      // color: rgba(77, 63, 45, 0.865);
       color: rgb(84, 92, 109);
     }
   }

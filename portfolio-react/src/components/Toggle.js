@@ -6,15 +6,17 @@
 //   }
 
 //   toggle = () => {
-//     this.setState({
+//     this.setState ({
 //       on: !this.state.on
 //     });
 //   };
+
 //   render() {
-//     const { children } = this.props;
-//     return children ({
+//     const { render } = this.props;
+//     return <div>{render({
 //         on: this.state.on,
-//         toggle: this.toggle
-//     })
+//         toggle: this.toggle,
+
+//     })}</div>
 //   }
 // }

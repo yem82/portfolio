@@ -13,7 +13,8 @@ class Technologies extends Component {
   render() {
 
     return (
-      <div className="bg">
+      <div>
+        <div className="section-bg">
         <h3 className="title">Technologies:</h3>
         <div className="row">
         <div className="card">
@@ -88,6 +89,7 @@ class Technologies extends Component {
             </div>
           </div>
         </div>
+     </div>
      </div>
     )
   }

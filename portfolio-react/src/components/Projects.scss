@@ -1,0 +1,154 @@
+.projects-title {
+  padding-top: 70px;
+  font-size: 185%;
+  font-weight: 250;
+  margin-left: 105px;
+}
+
+.card-a {
+  margin-right: 10px;
+  padding: 50px;
+  position: absolute;
+
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.card-b {
+  margin-right: 10px;
+  padding: 100px;
+  position: absolute;
+
+  h3 {
+    margin-top: -12px;
+    margin-bottom: 50px;
+  }
+}
+
+.card-c {
+  margin-right: 10px;
+  padding: 50px;
+  position: absolute;
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
+
+.column-a {
+  background: pink; 
+  padding: 50px 100px;
+  position: relative;
+
+  .sb-video {
+    width: 80%;
+    height: 50%;
+    margin-top: -80px;
+    margin-left: -70px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+   }
+
+   p {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 150px;
+   }
+}
+
+.column-b {
+  background: pink;
+  padding: -70px -20px;
+  position: relative;
+
+  .woke-video {
+    width: 100%;
+    height: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -50px;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+   }
+}
+
+.column-c {
+  background: pink;
+  padding: 50px 100px;
+  position: relative;
+
+  .notes-video {
+    width: 80%;
+    height: 65%;
+    margin-top: -110px;
+    margin-left: -74px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position:absolute;
+   }
+}
+
+.spacebook-website,
+.spacebook-github,
+.woke-github,
+.notes-github {
+  text-align: center;
+  color: brown;
+  border: solid 2px burlywood;
+  border-radius: 15px 15px;
+  width: 120px;
+  transition-duration: 170ms;
+
+
+  a {
+    &:link{
+      text-decoration: none!important;
+    }
+ }
+
+  a p {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    margin: auto;
+    color: rgb(142, 135, 135);
+  }
+
+  &:hover {
+    background-color: rgba(185, 184, 184, 0.214);
+  }
+}
+
+.spacebook-github {
+  margin-top: 290px;
+  margin-left: -85px;
+
+}
+
+.spacebook-website {
+  margin-top: -28px;
+  margin-left: 80px;
+
+}
+
+.woke-github {
+  margin-top: 450px;
+  left: 1px;
+}
+
+.notes-github {
+  margin-top: 200px;
+}
+
