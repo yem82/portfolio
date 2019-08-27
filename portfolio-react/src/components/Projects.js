@@ -16,7 +16,6 @@ class Projects extends Component {
 
     return (
       <div>
-      <div className="section-bg">
         <h3 id="projects" className="title projects-title">
         Projects:</h3>
         <div className="row">
@@ -34,7 +33,11 @@ class Projects extends Component {
             type="video/mp4"/>
             video not supported.
            </video>
- 
+          <div>
+          <div className="spacebook-brief">
+           Spacebook is a social media app built using Ruby on Rails, HTML and SCSS.
+          </div>
+          <div className="sb-buttons">
         <div className="spacebook-github">
             <a
               href="https://github.com/yem82/acebook-spacebook"
@@ -50,6 +53,8 @@ class Projects extends Component {
               rel="noopener noreferrer">
               <p>Website</p>
             </a>
+            </div>
+            </div>
           </div>
           </div>
           </div>
@@ -60,8 +65,6 @@ class Projects extends Component {
           <div className="column column-b">
           <video
             className="woke-video"
-            width="570"
-            height="640"
             loop="true"
             autoplay="autoplay"
             controls="controls"
@@ -71,6 +74,10 @@ class Projects extends Component {
             type="video/mp4"/>
             video not supported.
            </video>
+           <div >
+           <div className="woke-brief">
+           A hands-free mobile trivia app created to keep drivers awake at the wheel (especially for longer journeys) - built using Java and android studio.
+          </div>
           <div className="woke-github">
             <a
               href="https://github.com/yem82/woke-platypus"
@@ -81,14 +88,13 @@ class Projects extends Component {
           </div>
           </div>
           </div>
+          </div>
 
           <div className="card card-c">
           <h3>Notes App</h3>
           <div className="column column-c">
            <video 
            className="notes-video"
-           width="570"
-           height="640"
            loop="true" 
            autoplay="autoplay"
            controls="controls"
@@ -98,6 +104,10 @@ class Projects extends Component {
             type="video/mp4"/>
             video not supported.
            </video>
+           <div >
+           <div className="notes-brief">
+           A notes app built using Vanilla JavaScript and a custom testing framework.
+          </div>
           <div className="notes-github">
             <a
               href="https://github.com/yem82/notes"
@@ -108,8 +118,8 @@ class Projects extends Component {
           </div>
           </div>
           </div>
+          </div>
         </div>
-      </div>
       </div>
     )
   }

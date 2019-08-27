@@ -1,3 +1,10 @@
+// .projects-icon {
+//   font-size: 100px;
+//   margin-left:  590px;
+//   color: rgba(243, 229, 202, 0.966);
+//   color: rgba(243, 229, 202, 0.295);
+// }
+
 .projects-title {
   padding-top: 70px;
   font-size: 185%;
@@ -18,7 +25,7 @@
 
 .card-b {
   margin-right: 10px;
-  padding: 100px;
+  padding: 50px;
   position: absolute;
 
   h3 {
@@ -38,16 +45,15 @@
 }
 
 .column-a {
-  background: pink; 
-  padding: 50px 100px;
+  // background: pink; 
+  padding: 50px 20px;
   position: relative;
 
   .sb-video {
     width: 80%;
-    height: 50%;
-    margin-top: -80px;
-    margin-left: -70px;
-    padding-top: 50px;
+    height: 40%;
+    margin-top: -50px;
+    margin-left: 10px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -64,17 +70,17 @@
 }
 
 .column-b {
-  background: pink;
-  padding: -70px -20px;
+  // background: pink;
+  padding: -70px 20px;
   position: relative;
 
   .woke-video {
-    width: 100%;
-    height: 50%;
-    margin-top: 0px;
+    width: 90%;
+    height: 40%;
+    margin-top: 10px;
     margin-bottom: 0px;
-    margin-left: -50px;
-    padding-top: 0px;
+    margin-left: -35px;
+    padding-top: -50px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -83,16 +89,16 @@
 }
 
 .column-c {
-  background: pink;
-  padding: 50px 100px;
+  // background: pink;
+  padding: 50px 20px;
   position: relative;
 
   .notes-video {
     width: 80%;
-    height: 65%;
-    margin-top: -110px;
-    margin-left: -74px;
-    padding-top: 50px;
+    height: 35%;
+    margin-top: -50px;
+    margin-left: 10px;
+    padding-bottom: 0px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -111,44 +117,65 @@
   width: 120px;
   transition-duration: 170ms;
 
+    a {
+      &:link{
+        text-decoration: none!important;
+      }
+   }
 
-  a {
-    &:link{
-      text-decoration: none!important;
+    a p {
+      margin-top: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      margin: auto;
+      color: rgb(142, 135, 135);
     }
- }
 
-  a p {
-    margin-top: 12px;
-    font-weight: 500;
-    font-size: 16px;
-    margin: auto;
-    color: rgb(142, 135, 135);
+    &:hover {
+      background-color: rgba(185, 184, 184, 0.214);
+    }
   }
 
-  &:hover {
-    background-color: rgba(185, 184, 184, 0.214);
+.spacebook-brief{
+  margin-top: 170px;
+  text-align: left;
+}
+
+.woke-brief{
+  margin-top: 240px;
+  text-align: left;
+  
+}
+
+.notes-brief{
+    margin-top: 150px;
+    margin-left: 20px;
+    text-align: left;
   }
-}
 
-.spacebook-github {
-  margin-top: 290px;
-  margin-left: -85px;
+.sb-buttons {
+  margin-top: 160px;
+  margin-left: 147px;
 
-}
 
-.spacebook-website {
-  margin-top: -28px;
-  margin-left: 80px;
+  .spacebook-github {
+    margin-left: -138px;
+    margin-top: -70px;
+  }
 
+  .spacebook-website {
+    margin-top:-28px;
+  }
 }
 
 .woke-github {
-  margin-top: 450px;
-  left: 1px;
+  margin-top: 80px;
+  margin-left: 45px;
 }
 
 .notes-github {
-  margin-top: 200px;
+  margin-top: 100px;
+  justify-content: center;
+  margin-left: 75px;
 }
 
