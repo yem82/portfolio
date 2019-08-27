@@ -13,9 +13,13 @@
 }
 
 .card-a {
-  margin-right: 10px;
-  padding: 50px;
+  opacity: 0.8;
+  // background: pink;
+  margin-right: 55px;
+  margin-left: -15px;
+  padding: 5px 10px;
   position: absolute;
+  // box-shadow: 2px 2px 15px 6px rgba(214, 54, 81, 0.562);
 
   h3 {
     margin-top: 5px;
@@ -24,28 +28,30 @@
 }
 
 .card-b {
+  opacity: 0.8;
   margin-right: 10px;
-  padding: 50px;
+  padding-top: 5px;
   position: absolute;
 
   h3 {
-    margin-top: -12px;
+    margin-top: 8px;
     margin-bottom: 50px;
   }
 }
 
 .card-c {
+  opacity: 0.8;
   margin-right: 10px;
-  padding: 50px;
+  padding-top: 0px;
   position: absolute;
   h3 {
-    margin-top: 5px;
+    margin-top: 7px;
     margin-bottom: 50px;
   }
 }
 
 .column-a {
-  // background: pink; 
+  // background: rgba(255, 192, 203, 0.712); 
   padding: 50px 20px;
   position: relative;
 
@@ -70,16 +76,16 @@
 }
 
 .column-b {
-  // background: pink;
+  // background: rgba(255, 192, 203, 0.507);
   padding: -70px 20px;
   position: relative;
 
   .woke-video {
-    width: 90%;
+    width: 80%;
     height: 40%;
-    margin-top: 10px;
+    margin-top: -38px;
     margin-bottom: 0px;
-    margin-left: -35px;
+    margin-left: -15px;
     padding-top: -50px;
     justify-content: center;
     align-items: center;
@@ -89,7 +95,7 @@
 }
 
 .column-c {
-  // background: pink;
+  // background: rgba(255, 192, 203, 0.692);
   padding: 50px 20px;
   position: relative;
 
@@ -142,7 +148,7 @@
 }
 
 .woke-brief{
-  margin-top: 240px;
+  margin-top: 175px;
   text-align: left;
   
 }
@@ -169,13 +175,42 @@
 }
 
 .woke-github {
-  margin-top: 80px;
+  margin-top: 30px;
   margin-left: 45px;
 }
 
 .notes-github {
-  margin-top: 100px;
+  margin-top: 80px;
   justify-content: center;
   margin-left: 75px;
 }
 
+@media screen and (max-width: 649px) {
+  .card-a {
+    margin-right: -5px;
+    margin-left: -15px;
+    padding: 5px 3px;
+  }
+
+  .projects-title {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 650px) {
+  .card-a {
+    margin-right: 50px;
+    margin-left: 38px;
+    padding: 5px 3px;
+  }
+
+  .projects-title {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1033px) {
+  .projects-title {
+    margin-left: 120px;
+  }
+}

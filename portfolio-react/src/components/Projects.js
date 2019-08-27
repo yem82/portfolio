@@ -76,7 +76,7 @@ class Projects extends Component {
            </video>
            <div >
            <div className="woke-brief">
-           A hands-free mobile trivia app created to keep drivers awake at the wheel (especially for longer journeys) - built using Java and android studio.
+           A hands-free mobile trivia app created to keep drivers awake at the wheel (especially for longer journeys) - built using Java, android studio and Dialogflow API.
           </div>
           <div className="woke-github">
             <a
