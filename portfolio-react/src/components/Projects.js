@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Spacebook from '../assets/spacebook.mp4';
-import Woke from '../assets/woke.mp4';
-import Notes from '../assets/notes.mp4';
-import './Projects.scss';
+import Spacebook from '../assets/videos/spacebook.mp4';
+import Woke from '../assets/videos/woke.mp4';
+import Notes from '../assets/videos/notes.mp4';
+import './stylesheets/Projects.scss';
 class Projects extends Component {
   constructor(props) {
     super(props);

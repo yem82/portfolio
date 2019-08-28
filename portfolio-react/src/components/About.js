@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './About.scss'
-import Profile from './profile.png'
+import './stylesheets/About.scss'
+import Profile from '../assets/images/profile.png'
 class About extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +29,7 @@ class About extends Component {
           <p>I am a London-based software developer with a creative yet practical approach to problem solving. I recently graudated from Makers Academy (a full-stack web development bootcamp), where I learnt how to use best coding practices and agile methodologies to build web applications.
               I'm excited about learning new technologies that will help build our future!</p>
 
-              <p><b>Looking to get in touch? Drop me a note below!</b></p>
+              <p><b>Looking to get in touch? Drop me a note<a href="#contact"> here!</a></b></p>
         </div>
         </div>
     )

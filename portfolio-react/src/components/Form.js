@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Form.scss';
+import './stylesheets/Form.scss';
 import axios from 'axios';
 
 function validate(firstname, lastname, email, message) {
