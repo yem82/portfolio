@@ -24,18 +24,18 @@ app.post('/express', (req, res) => {
     `
 
     let transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
+      service: "gmail",
       port: 587,
       secure: false,
       auth: {
-        user: 'queen.douglas12@ethereal.email',
+        user: process.env.EMAIL,
         pass: process.env.PASS
       }
     });
 
     let mailOptions = {
       from: 'test@gmail.com',
-      to: "queen.douglas12@ethereal.email",
+      to: process.env.EMAIL,
       subject: req.body.subject,
       text: req.body.message,
       html: htmlEmail

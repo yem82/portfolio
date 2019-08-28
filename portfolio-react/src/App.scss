@@ -1,4 +1,4 @@
-* {
+html, body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,8 +6,7 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .background-pic {

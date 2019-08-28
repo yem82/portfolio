@@ -5,12 +5,132 @@
 }
 
 form {
-  /* font-weight, font-size, font-family in one line */
   font: normal 16px Verdana, Geneva, sans-serif;
   line-height: 1.5em;
-  width: 25%;
-  /* sets an auto margin on each sid */
-  margin: auto;
-  margin-bottom: 25px;
-  position: relative;
+  margin-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin-left: 310px;
+    text-align: left;
+    opacity: 0.9;
+    padding-bottom: 50px;
+    font-size: 18px;
+  }
+}
+
+button {
+  padding: 0px;
+  text-align: center;
+  color: rgba(59, 31, 31, 0.582);
+  border: solid 2px rgba(222, 184, 135, 0.623);
+  border-radius: 15px 15px!important;
+  width: 95px;
+  height:40px;
+  background: rgba(185, 184, 184, 0.214);;
+  margin-top: 30px!important;
+  margin-right: 500px!important;
+  transition-duration: 170ms;
+  position:relative;
+
+  p {
+      margin-top: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      margin: auto;
+      color: rgb(142, 135, 135);
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.582);
+    }
+}
+
+.form-text {
+  width:600px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 40px; 
+}
+
+label {
+  opacity: 0.5;
+  padding: 5px;
+}
+
+.first-name {
+  margin-right: 490px;
+}
+
+.email {
+  margin-right: 532px;
+}
+
+.subject{
+  margin-right: 510px;
+}
+
+.last-name{
+  margin-right: 491px;
+}
+
+.message {
+  margin-right: 506px;
+}
+
+@media screen and (min-width: 221px) {
+  .contact-title{
+    margin-top: 70px;
+  }
+  
+  .form-text {
+    width:150px;
+  }
+
+ .form-row {
+    margin-left: 180px;
+    margin-top: 85px;
+    opacity: 0.9;
+    font-size: 14px;
+
+    p {
+      margin-left: -180px;
+      margin-right: 420px;
+      padding: 50px;
+      margin-top: -95px;
+      font-size: 12px;
+
+    }
+  }
+
+  .first-name {
+    margin-right: 495px;
+  }
+  
+  .last-name{
+    margin-right: 500px;
+  }
+
+  .subject{
+    margin-right: 525px;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+
+  .form-text {
+    width:250px;
+  }
+}
+
+@media screen and (min-width: 1042px) {
+
+  .form-text {
+    width:400px;
+  }
 }

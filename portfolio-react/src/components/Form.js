@@ -58,7 +58,6 @@ class Form extends Component {
           }, 2000);
       }
 
-    // eslint-disable-next-line
     const form = await axios.post('/express', {
       firstname,
       lastname,
@@ -72,71 +71,75 @@ render() {
     const { errors } = this.state
     return (
       <div>
-        <form onSubmit={this.handleSubmit} className="form" id="contact">
-          <h2>Contact:</h2>
-          <p>* required fields</p>
-          <br/>
-          <div className="row">
-          <div className="col">
-          <div className="form-group">
-            <label> *First name:</label>
+          <div className="title contact-title">
+          Contact:
+          </div>
+          <form onSubmit={this.handleSubmit} className="form" id="contact">
+    
+          <div className="row form-row">
+          
+          <p className="required">* required</p>
+            <br/>
+          
+          <div>
+            <label className="first-name">*First name</label>
             <input
-            value={this.state.firstname}
+            className="form-text"
             type="text"
-            className="form-control"
             name="firstname"
+            value={this.state.firstname}
             onChange={this.handleChange}/>
           </div>
-          </div>
 
-          <div className="col">
-          <div className="form-group">
-            <label> *Last name:</label>
+          
+          <div>
+            <label className="last-name">*Last name</label>
             <input
-            value={this.state.lastname}
+            className="form-text"
             type="text"
-            className="form-control"
             name="lastname"
+            value={this.state.lastname}
             onChange={this.handleChange}/>
           </div>
-          </div>
-          </div>
 
-          <div className="form-group">
-            <label> *Email:</label>
+          
+          <div>
+            <label className="email">*Email</label>
             <input
-              value={this.state.email}
+              className="form-text"
               type="text"
-              className="form-control"
               name="email"
+              value={this.state.email}
               onChange={this.handleChange}/>
           </div>
 
-          <div className="form-group">
-            <label> Subject:</label>
+          
+          <div>
+            <label className="subject">Subject</label>
             <input
-            value={this.state.subject}
+            className="form-text"
             type="text"
-            className="form-control"
             name="subject"
+            value={this.state.subject}
             onChange={this.handleChange}/>
           </div>
 
-          <div className="form-group">
-            <label> *Message:</label>
+          <div>
+            <label className="message">*Message</label>
             <textarea
-            value={this.state.message}
-            className="form-control"
+            className="form-text"
             name="message"
+            value={this.state.message}
             onChange={this.handleChange}/>
           </div>
-
-        <button className="btn btn-dark" type="submit">Submit</button>
+    
+        <button type="submit">Submit</button>
         <div id="error" className="errorMessage">
           <br/>
         {errors.map(error => (
           <p key={error}>* {error}</p>
         ))}
+        </div>
         </div>
         </form>
       </div>

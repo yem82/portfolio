@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
-// import Form from './components/Form';
+import Form from './components/Form';
 import './App.scss'
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
       <Technologies />
       <Projects />
     </Fragment>
-    {/* <div>
+    <Fragment >
       <Form />
-    </div> */}
+    </Fragment>
     </div>
   );
 }
