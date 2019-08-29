@@ -1,7 +1,7 @@
 .errorMessage {
   color: red;
   font-size: 0.75em;
-  display: relative;
+  transform: translate(310px, -2em);
 }
 
 form {
@@ -54,11 +54,11 @@ button {
   outline: none;
   background: none;
   border-bottom: 1px solid gray;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 label {
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 5px;
 }
 
@@ -122,15 +122,22 @@ label {
 
 
 @media screen and (min-width: 500px) {
-
   .form-text {
-    width:250px;
+    width: 250px;
   }
 }
 
 @media screen and (min-width: 1042px) {
 
+  .name-1{
+    margin-left: -405px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
   .form-text {
-    width:400px;
+    width: 400px;
   }
 }

@@ -15,10 +15,9 @@ class Footer extends Component {
     return (
       <div>
         <footer>
-       
         <ul className="footer-menu">
                 <li className="contact">
-                <a href="#contact"><i className="far fa-address-book icon"></i>
+                <a href="#contact"><i className="far fa-address-book footer-icon"></i>
                 <p>Contact</p></a>
                 </li>
                 <li className="github">
@@ -26,7 +25,7 @@ class Footer extends Component {
                   href="https://github.com/yem82"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <i className="fab fa-github icon"></i>
+                  <i className="fab fa-github footer-icon"></i>
                     <p>GitHub</p>
                   </a>
                 </li>
@@ -35,7 +34,7 @@ class Footer extends Component {
                   href="https://www.linkedin.com/in/yadebayo/"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <i className="fab fa-linkedin icon"></i>
+                  <i className="fab fa-linkedin footer-icon"></i>
                   <p>LinkedIn</p></a>
                 </li>
               </ul>

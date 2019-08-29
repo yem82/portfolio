@@ -13,7 +13,7 @@
 }
 
 .card-a {
-  opacity: 0.8;
+  opacity: 0.75;
   // background: pink;
   margin-right: 55px;
   margin-left: -15px;
@@ -28,7 +28,7 @@
 }
 
 .card-b {
-  opacity: 0.8;
+  opacity: 0.75;
   margin-right: 10px;
   padding-top: 5px;
   position: absolute;
@@ -40,10 +40,11 @@
 }
 
 .card-c {
-  opacity: 0.8;
+  opacity: 0.7;
   margin-right: 10px;
   padding-top: 0px;
   position: absolute;
+
   h3 {
     margin-top: 7px;
     margin-bottom: 50px;
@@ -134,6 +135,7 @@
       font-size: 16px;
       margin: auto;
       color: rgb(142, 135, 135);
+      transform: translate(0.8px);
     }
 
     &:hover {
@@ -211,5 +213,22 @@
 @media (min-width: 1033px) {
   .projects-title {
     margin-left: 120px;
+  }
+
+  .card-a {
+    // margin-right: 160px;
+    // margin-left: 0px;
+    transform: translate(-4em);
+    padding: 5px 3px;
+  }
+
+  .card-b {
+    // margin-left: -152px;
+    transform: translate(-2em);
+    padding: 5px 3px;
+  }
+
+  .card-c {
+    transform: translate(-1em);
   }
 }

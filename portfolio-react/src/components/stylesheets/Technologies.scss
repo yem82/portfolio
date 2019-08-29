@@ -2,6 +2,10 @@
   opacity: 0.7;
 }
 
+hr {
+  max-width: 100px;
+}
+
 .title {
   padding-top: 7px;
   font-size: 185%;
@@ -12,20 +16,21 @@
 .column {
   max-width: 320px;
   margin-bottom: 12px;
-  flex: 25%;
+  // flex: 25%;
   padding: 10px 50px;
-  box-sizing: border-box;
+  // box-sizing: border-box;
+  position: relative;
+  
 }
 
 .row {
-  max-width: 1100px;
+  // max-width: 1100px;
   text-align: center;
-  padding: 20px;
-  padding-left: 200px;
+  // padding: 20px;
+  // padding-left: 200px;
   display: block;
   justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
+  // text-align: center;
   margin: auto;
 }
 
@@ -33,9 +38,10 @@
   box-shadow: 0 4px 8px 0 rgba(241, 222, 222, 0.2);
   padding: 5px;
   margin-top: 25px;
-  position: relative;
-  overflow: hidden;
-  opacity: 0.9;
+  position: absolute;
+  background: rgb(223, 218, 218)!important;
+  // overflow: hidden;
+  // opacity: 0.9;
   // margin-right: 20px;
 
   ul {
@@ -53,7 +59,8 @@
   }
 
   p {
-    font-size: 18px;
+    font-size: 17.5px;
+    transform: translate(-1em) ;
   }
 }
 
@@ -143,8 +150,16 @@
 
 @media (min-width: 1200px) {
 
-  .row {
-    padding-left: 210px;
+  .card-i{
+    transform: translate(-7em);
+  }
+
+  .card-ii{
+    transform: translate(-2.5em);
+  }
+
+  .card-iii{
+    transform: translate(2em);
   }
 
 }

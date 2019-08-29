@@ -57,8 +57,17 @@
     margin-left: 25px;
     font-size: 115%;
     font-weight: 230;
-  }
 
+    a {
+      text-decoration: none;
+      color: rgb(90, 68, 38);
+
+      &:hover{
+        color: rgb(153, 133, 106);
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 @media(min-width: 1000px){
@@ -106,15 +115,6 @@
     font-size: 130%;
     font-weight: 250;
     transition-duration: 170ms;
-  }
-  a {
-    text-decoration: none;
-    color: rgb(90, 68, 38);
-
-    &:hover{
-      color: rgb(153, 133, 106);
-      text-decoration: none;
-    }
-  }
+   }
   }
 }

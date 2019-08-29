@@ -17,9 +17,10 @@ class Technologies extends Component {
         <div className="section-bg">
         <h3 className="title">Technologies:</h3>
         <div className="row">
-        <div className="card">
-          <div className="column">
+        <div className="card card-i">
+          <div className="column column-i">
             <h3>Testing Frameworks</h3>
+            <hr/>
             <br/>
             <ul>
               <li>
@@ -44,13 +45,17 @@ class Technologies extends Component {
             </div>
           </div>
 
-          <div className="card">
-          <div className="column">
-            <h3>Web Development</h3>
+          <div className="card card-ii">
+          <div className="column column-ii">
+            <h3>Development Tools</h3>
+            <hr/>
             <br/>
             <ul>
               <li>
               <p>React</p>
+              </li>
+              <li>
+              <p>JavaScript</p>
               </li>
               <li>
               <p>Node.js</p>
@@ -59,38 +64,20 @@ class Technologies extends Component {
               <p>Ruby on Rails</p>
               </li>
               <li>
-              <p>Sinatra</p>
-              </li>
-              <li>
               <p>PostgreSQL</p>
               </li>
               <li>
               <p>HTML/CSS</p>
               </li>
               <li>
-              <p>Bootstrap</p>
-              </li>
-            </ul>
-          </div>
-          </div>
-
-          <div className="card">
-          <div className="column">
-            <h3>Mobile Development</h3>
-            <br/>
-            <ul>
-              <li>
-              <p>Java</p>
-              </li>
-              <li>
               <p>Android Studio</p>
               </li>
             </ul>
-            </div>
+          </div>
           </div>
         </div>
-     </div>
-     </div>
+      </div>
+    </div>
     )
   }
 }

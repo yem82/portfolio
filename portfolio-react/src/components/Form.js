@@ -75,13 +75,13 @@ render() {
           Contact:
           </div>
           <form onSubmit={this.handleSubmit} className="form" id="contact">
-    
+
           <div className="row form-row">
-          
+
           <p className="required">* required</p>
             <br/>
-          
-          <div>
+
+          <div class="name-1">
             <label className="first-name">*First name</label>
             <input
             className="form-text"
@@ -91,7 +91,6 @@ render() {
             onChange={this.handleChange}/>
           </div>
 
-          
           <div>
             <label className="last-name">*Last name</label>
             <input
@@ -102,7 +101,6 @@ render() {
             onChange={this.handleChange}/>
           </div>
 
-          
           <div>
             <label className="email">*Email</label>
             <input
@@ -113,7 +111,6 @@ render() {
               onChange={this.handleChange}/>
           </div>
 
-          
           <div>
             <label className="subject">Subject</label>
             <input
@@ -132,7 +129,7 @@ render() {
             value={this.state.message}
             onChange={this.handleChange}/>
           </div>
-    
+
         <button type="submit">Submit</button>
         <div id="error" className="errorMessage">
           <br/>

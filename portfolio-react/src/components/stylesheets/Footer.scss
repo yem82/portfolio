@@ -17,33 +17,30 @@ footer {
     .contact {
       padding-top: 90px;
       margin-right: 440px;
-      position:relative;
     }
 
     .github {
       margin-top: -75px;
       margin-right: 50px;
-      position:relative;
     }
 
     .linkedin {
       margin-top: -75px;
       margin-right: -350px;
-      position:relative;
     }
 
     li {
       list-style-type: none;
       text-align: center;
-    }
 
-    a {
-      color: rgba(29, 28, 27, 0.714);
-      text-decoration: none;
-      transition-duration: 170ms;
-
-      &:hover {
-        color: rgb(84, 92, 109);
+      a {
+        color: rgba(29, 28, 27, 0.714);
+        text-decoration: none;
+        transition-duration: 170ms;
+  
+        &:hover {
+          color: rgb(84, 92, 109);
+        }
       }
     }
 
@@ -51,12 +48,11 @@ footer {
       font-size: 10px;
     }
 
-    .icon {
+    .footer-icon {
       font-size: 45px;
     }
   }
 }
-
 
 @media (max-width: 365px) {
 
@@ -90,7 +86,6 @@ footer {
   }
 }
 
-
 @media (max-width: 417px) {
 
   .contact {
@@ -106,7 +101,6 @@ footer {
     left: -80px;
   }
 }
-
 
 @media (max-width: 420px) {
 
