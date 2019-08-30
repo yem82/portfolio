@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './stylesheets/Form.scss';
+import Contact from '../assets/images/contact.svg'
 import axios from 'axios';
 
 function validate(firstname, lastname, email, message) {
@@ -138,6 +139,7 @@ render() {
         ))}
         </div>
         </div>
+        <img className="contact-pic" src={Contact} alt="contact pic"></img>
         </form>
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './stylesheets/Technologies.scss'
+import Planner from '../assets/images/checklist.svg'
 
 class Technologies extends Component {
   constructor(props) {
@@ -73,6 +74,7 @@ class Technologies extends Component {
               <p>Android Studio</p>
               </li>
             </ul>
+            <img className="planner-pic" src={Planner} alt="planner pic"></img>
           </div>
           </div>
         </div>

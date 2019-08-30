@@ -1,3 +1,5 @@
+$main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
 // .projects-icon {
 //   font-size: 100px;
 //   margin-left:  590px;
@@ -6,10 +8,16 @@
 // }
 
 .projects-title {
+  margin-top: 270px;
   padding-top: 70px;
   font-size: 185%;
-  font-weight: 250;
+  font-weight: 400;
   margin-left: 105px;
+  font-family: $main-font;
+
+  @media (min-width: 320px) {
+    margin-top: 470px;
+  }
 }
 
 .card-a {
@@ -24,6 +32,7 @@
   h3 {
     margin-top: 5px;
     margin-bottom: 20px;
+    font-weight: 400;
   }
 }
 
@@ -36,6 +45,7 @@
   h3 {
     margin-top: 8px;
     margin-bottom: 50px;
+    font-weight: 400;
   }
 }
 
@@ -46,15 +56,17 @@
   position: absolute;
 
   h3 {
-    margin-top: 7px;
+    margin-top: 14px;
     margin-bottom: 50px;
+    font-weight: 400;
   }
 }
 
 .column-a {
-  // background: rgba(255, 192, 203, 0.712); 
+  // background: rgba(255, 192, 203, 0.712);
   padding: 50px 20px;
   position: relative;
+  font-weight: 440;
 
   .sb-video {
     width: 80%;
@@ -80,11 +92,12 @@
   // background: rgba(255, 192, 203, 0.507);
   padding: -70px 20px;
   position: relative;
+  font-weight: 440;
 
   .woke-video {
     width: 80%;
-    height: 40%;
-    margin-top: -38px;
+    height: 42%;
+    margin-top: -35px;
     margin-bottom: 0px;
     margin-left: -15px;
     padding-top: -50px;
@@ -99,11 +112,12 @@
   // background: rgba(255, 192, 203, 0.692);
   padding: 50px 20px;
   position: relative;
+  font-weight: 440;
 
   .notes-video {
     width: 80%;
-    height: 35%;
-    margin-top: -50px;
+    height: 40%;
+    margin-top: -70px;
     margin-left: 10px;
     padding-bottom: 0px;
     justify-content: center;
@@ -122,6 +136,7 @@
   border-radius: 15px 15px;
   width: 120px;
   transition-duration: 170ms;
+  font-weight: 440;
 
     a {
       &:link{
@@ -131,7 +146,6 @@
 
     a p {
       margin-top: 12px;
-      font-weight: 500;
       font-size: 16px;
       margin: auto;
       color: rgb(142, 135, 135);
@@ -155,7 +169,7 @@
 }
 
 .notes-brief{
-    margin-top: 150px;
+    margin-top: 135px;
     margin-left: 20px;
     text-align: left;
   }
@@ -181,9 +195,15 @@
 }
 
 .notes-github {
-  margin-top: 80px;
+  margin-top: 67px;
   justify-content: center;
   margin-left: 75px;
+}
+
+@media (min-width: 320px) {
+  .projects-row {
+  padding-left: 32px;
+  }
 }
 
 @media (max-width: 649px) {
@@ -195,6 +215,19 @@
 
   .projects-title {
     margin-left: 15px;
+  }
+}
+
+.coding-pic {
+  transform: translate(12em, 8em);
+  opacity: 0.7;
+  max-width: 310px;
+  max-height: 310px;
+
+  @media (min-width: 320px) {
+    max-width: 280px;
+    max-height: 280px;
+    transform: translate(0em, 6em);
   }
 }
 
@@ -213,6 +246,11 @@
 @media (min-width: 1033px) {
   .projects-title {
     margin-left: 120px;
+    transform: translate(0em, 350px);
+  }
+
+  .projects-row {
+    margin-top: 150px;
   }
 
   .card-a {

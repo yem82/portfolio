@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Spacebook from '../assets/videos/spacebook.mp4';
 import Woke from '../assets/videos/woke.mp4';
 import Notes from '../assets/videos/notes.mp4';
+import Work from '../assets/images/ideas.svg'
 import './stylesheets/Projects.scss';
 class Projects extends Component {
   constructor(props) {
@@ -18,14 +19,14 @@ class Projects extends Component {
       <div>
         <h3 id="projects" className="title projects-title">
         Projects:</h3>
-        <div className="row">
+        <div className="row projects-row">
         <div className="card card-a">
         <h3>Spacebook</h3>
         <div className="column column-a">
         <video
             className="sb-video"
             loop="true"
-            autoplay="autoplay"
+            // autoplay="autoplay"
             controls="controls"
             muted
             >
@@ -66,7 +67,7 @@ class Projects extends Component {
           <video
             className="woke-video"
             loop="true"
-            autoplay="autoplay"
+            // autoplay="autoplay"
             controls="controls"
             muted
             >
@@ -96,7 +97,7 @@ class Projects extends Component {
            <video 
            className="notes-video"
            loop="true" 
-           autoplay="autoplay"
+          //  autoplay="autoplay"
            controls="controls"
            muted
            >
@@ -119,6 +120,7 @@ class Projects extends Component {
           </div>
           </div>
           </div>
+          <img className="coding-pic" src={Work} alt="coding pic"></img>
         </div>
       </div>
     )

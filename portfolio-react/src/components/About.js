@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './stylesheets/About.scss'
 import Profile from '../assets/images/profile.png'
+import AboutMe from  '../assets/images/aboutme.svg'
 class About extends Component {
   constructor(props) {
     super(props);
@@ -22,6 +23,10 @@ class About extends Component {
         <div className="section-b">
         <div className="brief"><p> Hi! My name is Yemi and I am a full-stack software engineer.</p>
         <p>I am passionate about learning and developing software that improves productivity.</p>
+        <div className="scroll-indicator">
+          <span></span>
+          <span></span>
+        </div>
         </div>
         </div>
 
@@ -30,6 +35,7 @@ class About extends Component {
               I'm excited about learning new technologies that will help build our future!</p>
 
               <p><b>Looking to get in touch? Drop me a note<a href="#contact"> here!</a></b></p>
+              <img className="about-pic" src={AboutMe} alt="about pic"></img>
         </div>
         </div>
     )

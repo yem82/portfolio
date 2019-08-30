@@ -1,3 +1,5 @@
+$main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
 .section-bg {
   opacity: 0.7;
 }
@@ -7,10 +9,14 @@ hr {
 }
 
 .title {
+  margin-top: 45px;
   padding-top: 7px;
   font-size: 185%;
-  font-weight: 250;
+  font-weight: 400;
   margin-left: 105px;
+  font-family: $main-font;
+  transform: translate(0em, 250px);
+
 }
 
 .column {
@@ -20,7 +26,6 @@ hr {
   padding: 10px 50px;
   // box-sizing: border-box;
   position: relative;
-  
 }
 
 .row {
@@ -32,17 +37,35 @@ hr {
   justify-content: center;
   // text-align: center;
   margin: auto;
+  transform: translate(0em, 250px);
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(241, 222, 222, 0.2);
-  padding: 5px;
+  // padding: -15px;
   margin-top: 25px;
   position: absolute;
+  // padding-bottom: -85px!important;
   background: rgb(223, 218, 218)!important;
   // overflow: hidden;
   // opacity: 0.9;
   // margin-right: 20px;
+
+  .column-i {
+    margin-bottom: -13em;
+    @media (min-width: 320px) {
+      padding-right: 42px;
+      padding-left: 42px;
+    }
+  }
+
+   .column-ii {
+    margin-bottom: -14em;
+    @media (min-width: 320px) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
 
   ul {
     line-height: 3em;
@@ -55,16 +78,33 @@ hr {
   h3 {
     padding-top: 7px;
     font-size: 130%;
-    font-weight: 270;
+    font-weight: 400;
+    font-family: $main-font;
   }
 
   p {
     font-size: 17.5px;
-    transform: translate(-1em) ;
+    transform: translate(-1em);
+    font-weight: 355;
+    font-family: $main-font;
   }
 }
 
-@media screen and (max-width: 650px) {
+.planner-pic {
+  max-width: 280px;
+  max-height: 280px;
+  transform: translate(-20em, 7em);
+
+  @media (min-width: 320px) {
+    max-width: 250px;
+    max-height: 250px;
+    transform: translate(0em, 6em);
+  }
+}
+
+
+
+@media (max-width: 650px) {
   .column {
     width: 100%;
     flex: 100%;
@@ -149,17 +189,12 @@ hr {
 }
 
 @media (min-width: 1200px) {
-
   .card-i{
     transform: translate(-7em);
   }
 
   .card-ii{
     transform: translate(-2.5em);
-  }
-
-  .card-iii{
-    transform: translate(2em);
   }
 
 }

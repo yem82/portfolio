@@ -1,5 +1,7 @@
+$main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
 footer {
-  margin-top: 190px;
+  margin-top: 390px;
   max-width: 100vw;
   height: 300px;
   background: rgba(126, 155, 173, 0.486);
@@ -11,6 +13,8 @@ footer {
 
   p {
    text-align: center;
+   font-family: $main-font;
+   font-weight: 400;
   }
 
   .footer-menu {
@@ -46,6 +50,7 @@ footer {
 
     p {
       font-size: 10px;
+      // font-family: $main-font;
     }
 
     .footer-icon {
