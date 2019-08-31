@@ -22,7 +22,7 @@ class About extends Component {
         </div>
         <div className="section-b">
         <div className="brief"><p> Hi! My name is Yemi and I am a full-stack software engineer.</p>
-        <p>I am passionate about learning and developing software that improves productivity.</p>
+        <p>I enjoy learning new technologies and developing software that enables us to learn, grow and thrive.</p>
         <div className="scroll-indicator">
           <span></span>
           <span></span>

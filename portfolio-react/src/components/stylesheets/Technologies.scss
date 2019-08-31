@@ -16,56 +16,28 @@ hr {
   margin-left: 105px;
   font-family: $main-font;
   transform: translate(0em, 250px);
-
 }
 
 .column {
   max-width: 320px;
   margin-bottom: 12px;
-  // flex: 25%;
   padding: 10px 50px;
-  // box-sizing: border-box;
   position: relative;
 }
 
 .row {
-  // max-width: 1100px;
   text-align: center;
-  // padding: 20px;
-  // padding-left: 200px;
   display: block;
   justify-content: center;
-  // text-align: center;
   margin: auto;
   transform: translate(0em, 250px);
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(241, 222, 222, 0.2);
-  // padding: -15px;
   margin-top: 25px;
   position: absolute;
-  // padding-bottom: -85px!important;
   background: rgb(223, 218, 218)!important;
-  // overflow: hidden;
-  // opacity: 0.9;
-  // margin-right: 20px;
-
-  .column-i {
-    margin-bottom: -13em;
-    @media (min-width: 320px) {
-      padding-right: 42px;
-      padding-left: 42px;
-    }
-  }
-
-   .column-ii {
-    margin-bottom: -14em;
-    @media (min-width: 320px) {
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-  }
 
   ul {
     line-height: 3em;
@@ -78,7 +50,7 @@ hr {
   h3 {
     padding-top: 7px;
     font-size: 130%;
-    font-weight: 400;
+    font-weight: 550;
     font-family: $main-font;
   }
 
@@ -94,15 +66,28 @@ hr {
   max-width: 280px;
   max-height: 280px;
   transform: translate(-20em, 7em);
+}
 
-  @media (min-width: 320px) {
+
+@media screen and (min-width: 320px) {
+  .column-i {
+    margin-bottom: -13em;
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+
+  .column-ii {
+    margin-bottom: -13em;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .planner-pic {
     max-width: 250px;
     max-height: 250px;
     transform: translate(0em, 6em);
   }
 }
-
-
 
 @media (max-width: 650px) {
   .column {
@@ -169,6 +154,7 @@ hr {
 @media (min-width: 1000px) {
 
   .title {
+    margin-top: 200px;
     margin-left: 110px;
   }
 

@@ -39,7 +39,7 @@ class Footer extends Component {
                 </li>
               </ul>
               <hr />
-              <p>©Yemi Adebayo 2019</p>
+              <p className="c-name">©Yemi Adebayo 2019</p>
         </footer>
       </div>
     )

@@ -1,38 +1,40 @@
-$main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
-
-// .projects-icon {
-//   font-size: 100px;
-//   margin-left:  590px;
-//   color: rgba(243, 229, 202, 0.966);
-//   color: rgba(243, 229, 202, 0.295);
-// }
-
 .projects-title {
-  margin-top: 270px;
   padding-top: 70px;
-  font-size: 185%;
-  font-weight: 400;
   margin-left: 105px;
-  font-family: $main-font;
 
   @media (min-width: 320px) {
     margin-top: 470px;
   }
+
+  @media (min-width: 900px) {
+    margin-top: 270px;
+  }
+}
+
+.spacebook-hr {
+  transform: translate(4em, -1em);
+  max-width: 190px;
+}
+
+.woke-hr, .notes-hr {
+  transform: translate(4em, -3em);
+  max-width: 190px;
 }
 
 .card-a {
   opacity: 0.75;
-  // background: pink;
   margin-right: 55px;
   margin-left: -15px;
   padding: 5px 10px;
   position: absolute;
-  // box-shadow: 2px 2px 15px 6px rgba(214, 54, 81, 0.562);
+
+  @media (min-width: 702px) {
+    transform: translate(-0.8em);
+  }
 
   h3 {
     margin-top: 5px;
     margin-bottom: 20px;
-    font-weight: 400;
   }
 }
 
@@ -45,7 +47,14 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   h3 {
     margin-top: 8px;
     margin-bottom: 50px;
-    font-weight: 400;
+  }
+
+  @media (min-width: 652px) {
+    transform: translate(1.5em);
+  }
+
+  @media (min-width: 666px) {
+    transform: translate(-0.5em);
   }
 }
 
@@ -58,12 +67,34 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   h3 {
     margin-top: 14px;
     margin-bottom: 50px;
-    font-weight: 400;
+  }
+
+  @media (min-width: 638px) {
+     transform: translate(8.7em);
+  }
+
+  @media (min-width: 652px) {
+    transform: translate(10.2em);
+  }
+
+  @media (min-width: 666px) {
+    transform: translate(-0.5em);
+  }
+
+  @media (min-width: 1002px) {
+    transform: translate(0.6em);
+  }
+
+  @media (min-width: 1032px) {
+    transform: translate(-3.5em)!important;
+  }
+
+  @media (min-width: 1068px) {
+    transform: translate(-1em)!important;
   }
 }
 
 .column-a {
-  // background: rgba(255, 192, 203, 0.712);
   padding: 50px 20px;
   position: relative;
   font-weight: 440;
@@ -89,7 +120,6 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
 }
 
 .column-b {
-  // background: rgba(255, 192, 203, 0.507);
   padding: -70px 20px;
   position: relative;
   font-weight: 440;
@@ -109,7 +139,6 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
 }
 
 .column-c {
-  // background: rgba(255, 192, 203, 0.692);
   padding: 50px 20px;
   position: relative;
   font-weight: 440;
@@ -136,7 +165,7 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   border-radius: 15px 15px;
   width: 120px;
   transition-duration: 170ms;
-  font-weight: 440;
+ 
 
     a {
       &:link{
@@ -148,8 +177,9 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
       margin-top: 12px;
       font-size: 16px;
       margin: auto;
-      color: rgb(142, 135, 135);
+      color: rgba(59, 31, 31, 0.582);
       transform: translate(0.8px);
+      font-weight: 440;
     }
 
     &:hover {
@@ -176,6 +206,7 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
 
 .sb-buttons {
   margin-top: 160px;
+  transform: translate(0em, 2em);
   margin-left: 147px;
 
 
@@ -198,6 +229,7 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   margin-top: 67px;
   justify-content: center;
   margin-left: 75px;
+  transform: translate(0em, 2em);
 }
 
 @media (min-width: 320px) {
@@ -229,6 +261,34 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
     max-height: 280px;
     transform: translate(0em, 6em);
   }
+
+  @media (min-width: 634px) {
+    transform: translate(0em, 35em);
+  }
+
+  @media (min-width: 665px) {
+    transform: translate(0em, 15em);
+  }
+
+  @media (min-width: 691px) {
+    transform: translate(2em, 12em);
+  }
+
+  @media (min-width: 700px) {
+    transform: translate(2em, 35em);
+  }
+
+  @media (min-width: 1000px) {
+    max-width: 310px;
+    max-height: 310px;
+    transform: translate(10em, 35em);
+  }
+
+  @media (min-width: 1068px) {
+    max-width: 310px;
+    max-height: 310px;
+    transform: translate(16em, 8em);
+  }
 }
 
 @media (min-width: 650px) {
@@ -251,17 +311,15 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
 
   .projects-row {
     margin-top: 150px;
+    margin-left: 50px!important;
   }
 
   .card-a {
-    // margin-right: 160px;
-    // margin-left: 0px;
     transform: translate(-4em);
     padding: 5px 3px;
   }
 
   .card-b {
-    // margin-left: -152px;
     transform: translate(-2em);
     padding: 5px 3px;
   }

@@ -22,11 +22,11 @@ class Projects extends Component {
         <div className="row projects-row">
         <div className="card card-a">
         <h3>Spacebook</h3>
+        <hr className="spacebook-hr"/>
         <div className="column column-a">
         <video
             className="sb-video"
             loop="true"
-            // autoplay="autoplay"
             controls="controls"
             muted
             >
@@ -63,11 +63,11 @@ class Projects extends Component {
 
        <div className="card card-b">
           <h3>Woke App</h3>
+          <hr className="woke-hr"/>
           <div className="column column-b">
           <video
             className="woke-video"
             loop="true"
-            // autoplay="autoplay"
             controls="controls"
             muted
             >
@@ -91,13 +91,13 @@ class Projects extends Component {
           </div>
           </div>
 
-          <div className="card card-c">
+        <div className="card card-c">
           <h3>Notes App</h3>
+          <hr className="notes-hr"/>
           <div className="column column-c">
            <video 
            className="notes-video"
            loop="true" 
-          //  autoplay="autoplay"
            controls="controls"
            muted
            >

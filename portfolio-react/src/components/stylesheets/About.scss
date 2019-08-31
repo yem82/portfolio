@@ -1,7 +1,6 @@
 $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
-.section-a{
-  // background: rgba(198, 184, 156, 0.541);
+.section-a {
   padding: 3px;
   padding-left: 10px;
   margin-top: 0;
@@ -33,27 +32,29 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   font-size: 110%;
   font-family: $main-font;
   font-weight: 345;
-  letter-spacing: 0.5px;
+
+  @media(max-width: 997px) {
+    transform: translate(5px);
+  }
 }
 
 .scroll-indicator {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 210px;
   transform: translate(1em, 8em) rotate(45deg);
 
   span {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     display: block;
     box-sizing: border-box;
     border: none;
-    border-right: 3px solid white;
-    border-bottom: 3px solid white;
-    animation: animate 1.25s linear infinite;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    animation: animate 1s linear infinite;
+
     &:nth-child(1){
       top: -30px;
       left: -30px;
@@ -67,25 +68,25 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
 
     @media (max-width: 448px) {
       @media (max-width: 375px) {
-        transform: translate(5.7em, 8em) rotate(45deg);
+        transform: translate(3.9em, 8em) rotate(45deg);
 
         @media (max-width: 330px) {
-          transform: translate(4.5em, 8em) rotate(45deg);
+          transform: translate(2.3em, 8em) rotate(45deg);
           }
         }
-      transform: translate(7em, 8em) rotate(45deg);
+      transform: translate(5em, 8em) rotate(45deg);
     }
 
     @media (min-width: 449px) {
-        transform: translate(8em, 8em) rotate(45deg);
+        transform: translate(7em, 8em) rotate(45deg);
     }
 
     @media (min-width: 500px) {
-        transform: translate(9em, 8em) rotate(45deg);
+        transform: translate(8.5em, 8em) rotate(45deg);
     }
 
     @media (min-width: 564px) {
-        transform: translate(11em, 8em) rotate(45deg);
+        transform: translate(10em, 8em) rotate(45deg);
     }
 
     @media (min-width: 640px) {
@@ -93,7 +94,7 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
     }
 
     @media (min-width: 720px) {
-        transform: translate(16em, 8em) rotate(45deg);
+        transform: translate(15em, 8em) rotate(45deg);
     }
 
     @media (min-width: 820px) {
@@ -109,7 +110,7 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
     }
 
     @media (min-width: 1000px) {
-        transform: translate(1em, 8em) rotate(45deg);
+        transform: translate(-0.4em, 10em) rotate(45deg);
     }
 }
 
@@ -119,18 +120,51 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   }
 
   100% {
-    border-color: rgba(29, 28, 27, 0.714);
+    border-color: rgba(54, 52, 50, 0.842);
   }
 }
 
+.about-pic {
+  @media (max-width: 700px) {
+      max-width: 250px;
+      max-height: 250px;
+      transform: translate(1em, 4em);
+  }
+
+  @media (min-width: 701px) {
+      max-width: 300px;
+      max-height: 300px;
+      transform: translate(4em, 5em);
+  }
+
+  @media (min-width: 751px) {
+      max-width: 270px;
+      max-height: 270px;
+      transform: translate(8em, 8em);
+  }
+
+  @media (min-width: 820px) {
+      max-width: 390px;
+      max-height: 390px;
+      transform: translate(24em, 5em);
+  }
+
+  @media (min-width: 999px) {
+      transform: translate(35em, 1.5em)!important;
+  }
+
+  @media (min-width: 1102px) {
+      transform: translate(42em, 2.5em)!important;
+  }
+
+}
+
 .section-b{
-  // background: rgba(198, 184, 156, 0.541);
   width:100%;
   padding: 5px;
 }
 
 .section-c {
-  // background: rgba(198, 184, 156, 0.541);
   opacity: 0.7;
   padding: 20px;
   margin-top: 50px;
@@ -149,6 +183,7 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
     margin-left: 25px;
     font-size: 115%;
     font-weight: 230;
+    
 
     a {
       text-decoration: none;
@@ -161,18 +196,6 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
     }
   }
 }
-
-@media (max-width: 700px) {
-  .about-pic {
-    max-width: 250px;
-    max-height: 250px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    transform: translate(1em, 4em);
-  }
-}
-
 
 @media (min-width: 1000px) {
   .grid {
@@ -193,16 +216,18 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   }
 
   .brief {
-    padding-top: 250px;
+    padding-top: 180px;
     padding-right: 140px;
     padding-left: 15px;
     font-size: 150%;
-    }
+    font-weight: 350;
+    opacity: 0.7;
+  }
 
-.section-c {
-  grid-column: 1/3;
-  grid-row: 0/2;
-  opacity: 0.7;
+  .section-c {
+    grid-column: 1/3;
+    grid-row: 0/2;
+    opacity: 0.7;
 
   h3 {
     margin-top: 50px;
@@ -220,16 +245,6 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
     font-size: 130%;
     font-family: $main-font;
     font-weight: 410;
-    transition-duration: 170ms;
    }
-
-   .about-pic {
-    max-width: 380px;
-    max-height: 3800px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    transform: translate(45em, 3em);
-  }
   }
 }

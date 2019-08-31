@@ -1,14 +1,27 @@
 .errorMessage {
-  color: red;
+  color: rgb(235, 30, 30);
   font-size: 0.75em;
   transform: translate(310px, -2em);
 }
 
+.required {
+  color: rgb(235, 30, 30);
+}
+
 .contact-title{
   transform: translate(0, 13em);
-  @media (min-width:320px) {
+  @media (min-width: 320px) {
     transform: translate(0, 16em);
   }
+
+  @media (min-width: 656px) {
+    transform: translate(0, 19em);
+  }
+
+  @media (min-width: 1070px) {
+    transform: translate(0, 15em);
+  }
+
 }
 
 form {
@@ -23,6 +36,14 @@ form {
     margin-top: 250px;
   }
 
+  @media (min-width: 656px) {
+    margin-top: 320px;
+  }
+
+  @media (min-width: 1070px) {
+    margin-top: 230px;
+  }
+
   p {
     margin-left: 310px;
     text-align: left;
@@ -34,7 +55,11 @@ form {
   .contact-pic {
     max-width: 200px;
     max-height: 200px;
-    transform: translate(-10em, 26em);
+    transform: translate(-10em, 23em);
+    @media(max-width: 718px) {
+      max-width: 100px;
+      max-height: 100px;
+    }
   }
 }
 
@@ -51,18 +76,19 @@ button {
   margin-right: 500px!important;
   transition-duration: 170ms;
   position:relative;
+  font-weight: 500;
 
   p {
-      margin-top: 12px;
-      font-weight: 500;
-      font-size: 16px;
-      margin: auto;
-      color: rgb(142, 135, 135);
-    }
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    margin: auto;
+    color: rgb(142, 135, 135);
+  }
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.582);
-    }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.582);
+  }
 }
 
 .form-text {
@@ -77,10 +103,14 @@ button {
 label {
   opacity: 0.7;
   padding: 5px;
+  font-weight: 550;
 }
 
 .first-name {
   margin-right: 490px;
+  @media (max-width: 769px) {
+    white-space: nowrap;
+  }
 }
 
 .email {
@@ -103,12 +133,12 @@ label {
   .contact-title{
     margin-top: 70px;
   }
-  
+
   .form-text {
     width:150px;
   }
 
- .form-row {
+  .form-row {
     margin-left: 180px;
     margin-top: 85px;
     opacity: 0.9;
@@ -120,20 +150,7 @@ label {
       padding: 50px;
       margin-top: -95px;
       font-size: 12px;
-
     }
-  }
-
-  .first-name {
-    margin-right: 495px;
-  }
-  
-  .last-name{
-    margin-right: 500px;
-  }
-
-  .subject{
-    margin-right: 525px;
   }
 }
 
@@ -144,10 +161,10 @@ label {
   }
 }
 
-@media screen and (min-width: 1042px) {
 
-  .name-1{
-    margin-left: -405px;
+@media screen and (min-width: 1042px) {
+  .name-1 {
+    margin-left: -415px;
   }
 
   label {
@@ -157,4 +174,10 @@ label {
   .form-text {
     width: 400px;
   }
+
+  .required {
+    font-size: 14px!important;
+    transform: translate(45px);
+  }
 }
+
