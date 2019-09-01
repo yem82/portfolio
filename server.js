@@ -53,6 +53,14 @@ app.post('/express', (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
+const path = require('path')
+
+app.use(express.static(path.join(__dirname, 'portfolio-react/build')))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/portfolio-react/build/index.html'))
+})
+
 app.listen(PORT, () => {
   console.log(`auto baby on ${PORT}!`);
 });
