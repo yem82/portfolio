@@ -127,7 +127,7 @@
   .woke-video {
     width: 80%;
     height: 42%;
-    margin-top: -35px;
+    margin-top: -38px;
     margin-bottom: 0px;
     margin-left: -15px;
     padding-top: -50px;
@@ -146,7 +146,7 @@
   .notes-video {
     width: 80%;
     height: 40%;
-    margin-top: -70px;
+    margin-top: -83px;
     margin-left: 10px;
     padding-bottom: 0px;
     justify-content: center;
@@ -221,15 +221,16 @@
 }
 
 .woke-github {
-  margin-top: 30px;
+  margin-top: 52px;
   margin-left: 45px;
+  // transform: translate(0em, 1.4em);
 }
 
 .notes-github {
-  margin-top: 67px;
+  margin-top: 123px;
   justify-content: center;
   margin-left: 75px;
-  transform: translate(0em, 2em);
+  // transform: translate(0em, 3.5em);
 }
 
 @media (min-width: 320px) {

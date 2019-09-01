@@ -36,7 +36,7 @@ class Projects extends Component {
            </video>
           <div>
           <div className="spacebook-brief">
-           Spacebook is a social media app built using Ruby on Rails, HTML and SCSS.
+           Spacebook is a social media app built using <b>Ruby on Rails, HTML</b> and <b>SCSS</b>.
           </div>
           <div className="sb-buttons">
         <div className="spacebook-github">
@@ -77,7 +77,7 @@ class Projects extends Component {
            </video>
            <div >
            <div className="woke-brief">
-           A hands-free mobile trivia app created to keep drivers awake at the wheel (especially for longer journeys) - built using Java, android studio and Dialogflow API.
+           A hands-free mobile trivia app created to keep drivers awake at the wheel (especially for longer journeys) - built using <b>Java, Android Studio</b> and <b>Dialogflow API</b>.
           </div>
           <div className="woke-github">
             <a
@@ -107,7 +107,7 @@ class Projects extends Component {
            </video>
            <div >
            <div className="notes-brief">
-           A notes app built using Vanilla JavaScript and a custom testing framework.
+           A notes app built using <b>Vanilla JavaScript</b> and a <b>custom testing framework</b>.
           </div>
           <div className="notes-github">
             <a
