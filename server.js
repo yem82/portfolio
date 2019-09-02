@@ -66,7 +66,7 @@ app.listen(PORT, () => {
 });
 
 $.ajax({
-  url: 'yemiadebayo.com',
+  url: 'yemiadebayo.herokuapp.com',
   type: 'POST',
   headers: {'Accept': 'application/json;'},
   data: {
