@@ -23,10 +23,10 @@ class About extends Component {
         <div className="section-b">
         <div className="brief"><p> <b>Hi, my name is Yemi!</b> I am a full-stack software engineer.</p>
         <p>I enjoy learning new technologies and developing software that enables us to learn, grow and thrive.</p>
-        <div className="scroll-indicator">
+        <p className="scroll-indicator">
           <span></span>
           <span></span>
-        </div>
+        </p>
         </div>
         </div>
 

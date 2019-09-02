@@ -11,9 +11,8 @@ html, body {
 }
 
 .background-pic {
-  background-image: url('../src/assets/images/light-gradient.jpg');
+  background: linear-gradient(to bottom, #949da3,#a59999);
   background-size: cover;
-  // background-attachment: fixed;
  }
 
 html {
