@@ -64,3 +64,15 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`auto baby on ${PORT}!`);
 });
+
+$.ajax({
+  url: 'yemiadebayo.com',
+  type: 'POST',
+  headers: {'Accept': 'application/json;'},
+  data: {
+  "subject": "subject",
+  "message": "some body text"
+  },
+  }).done(function (res) {
+    console.log(res); // it shows your email sent message.
+});
