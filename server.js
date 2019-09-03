@@ -32,9 +32,9 @@ app.post('/express', (req, res) => {
       auth: {
         type: 'OAuth2',
         user: process.env.EMAIL,
-        clientId: CLIENT_ID,
-        clientSecret: CLIENT_SECRET,
-        refreshToken: REFRESH_TOKEN,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN,
         // pass: process.env.PASS
       }
     });
