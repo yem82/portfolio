@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import nodemailer from 'nodemailer';
 import 'dotenv/config';
+// const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);`
 
 const app = express();
 

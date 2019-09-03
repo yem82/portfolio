@@ -5,7 +5,7 @@
   "description": "Personal portfolio website",
   "main": "server.js",
   "scripts": {
-    "restart":  "kill $(lsof -t -i:5000)",
+    "restart": "kill $(lsof -t -i:5000)",
     "start": "nodemon -r esm server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm start --prefix client",
@@ -31,6 +31,7 @@
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "nodemailer": "^6.3.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "sendgrid": "^4.2.0"
   }
 }
