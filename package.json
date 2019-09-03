@@ -32,6 +32,7 @@
     "express": "^4.17.1",
     "nodemailer": "^6.3.0",
     "nodemon": "^1.19.1",
-    "sendgrid": "^4.2.0"
+    "sendgrid": "^4.2.0",
+    "xoauth2": "^1.2.0"
   }
 }

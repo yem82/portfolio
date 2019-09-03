@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import nodemailer from 'nodemailer';
+import xoauth2 from 'xoauth2';
 import 'dotenv/config';
 // const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);`
 
@@ -29,8 +30,12 @@ app.post('/express', (req, res) => {
       port: 587,
       secure: false,
       auth: {
+        type: 'OAuth2',
         user: process.env.EMAIL,
-        pass: process.env.PASS
+        clientId: CLIENT_ID,
+        clientSecret: CLIENT_SECRET,
+        refreshToken: REFRESH_TOKEN,
+        // pass: process.env.PASS
       }
     });
 
