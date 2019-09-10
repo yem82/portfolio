@@ -1,13 +1,10 @@
 $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
 .navigation {
-  max-width: 100vw;
-  margin-right: 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  // background-color: rgb(235, 229, 229);
   height: 60px;
   box-shadow: 0 4px 4px rgba(10, 0, 0, 0.2);
 

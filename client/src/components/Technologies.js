@@ -34,6 +34,9 @@ class Technologies extends Component {
               <p>Jasmine</p>
               </li>
               <li>
+              <p>Jest</p>
+              </li>
+              <li>
               <p>Espresso</p>
               </li>
               <li>
@@ -53,7 +56,7 @@ class Technologies extends Component {
             <br/>
             <ul>
               <li>
-              <p>React</p>
+              <p>React.js</p>
               </li>
               <li>
               <p>JavaScript</p>
@@ -66,6 +69,12 @@ class Technologies extends Component {
               </li>
               <li>
               <p>PostgreSQL</p>
+              </li>
+              <li>
+              <p>MongoDB</p>
+              </li>
+              <li>
+              <p>Mongoose</p>
               </li>
               <li>
               <p>HTML/CSS</p>
