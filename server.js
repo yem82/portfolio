@@ -28,18 +28,17 @@ app.post('/express', (req, res) => {
     `
 
     let transporter = nodemailer.createTransport({
-      service: 'Sendgrid',
+      service: 'gmail',
       port: 587,
       secure: false,
       auth: {
-
-        user: process.env.SENDGRID_USERNAME,
-        pass: process.env.SENDGRID_PASS
-        // type: "OAuth2",
-        // user: process.env.EMAIL,
-        // clientId: process.env.CLIENT_ID,
-        // clientSecret: process.env.CLIENT_SECRET,
-        // refreshToken: process.env.REFRESH_TOKEN
+        // user: process.env.SENDGRID_USERNAME,
+        // pass: process.env.SENDGRID_PASS
+        type: "OAuth2",
+        user: process.env.EMAIL,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN
       }
     });
 
