@@ -61,6 +61,12 @@ hr {
   }
 }
 
+.planner-pic {
+  max-width: 250px;
+  max-height: 250px;
+  transform: translate(0em, 6em);
+}
+
 @media screen and (min-width: 320px) {
   .column-i {
     margin-bottom: -13em;
@@ -72,12 +78,6 @@ hr {
     margin-bottom: -13em;
     padding-right: 10px;
     padding-left: 10px;
-  }
-
-  .planner-pic {
-    max-width: 250px;
-    max-height: 250px;
-    transform: translate(0em, 6em);
   }
 }
 
