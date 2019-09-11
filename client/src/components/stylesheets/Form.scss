@@ -2,6 +2,11 @@
   color: rgb(235, 30, 30);
   font-size: 0.75em;
   transform: translate(310px, -2em);
+
+  @media (max-width: 420px) {
+    transform: translate(10em, 8em);
+  }
+
 }
 
 .required {
@@ -131,7 +136,7 @@ label {
 
 @media screen and (min-width: 221px) {
   .contact-title{
-    margin-top: 70px;
+    margin-top: 480px;
   }
 
   .form-text {
@@ -140,7 +145,7 @@ label {
 
   .form-row {
     margin-left: 180px;
-    margin-top: 85px;
+    margin-top: -65px;
     opacity: 0.9;
     font-size: 14px;
 

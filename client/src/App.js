@@ -13,8 +13,8 @@ function App() {
     <Fragment >
       <Navbar />
       <About />
-      <Technologies />
       <Projects />
+      <Technologies />
     </Fragment>
     <Fragment >
       <Form />
