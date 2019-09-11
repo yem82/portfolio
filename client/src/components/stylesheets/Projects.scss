@@ -1,14 +1,20 @@
 .projects-title {
-  padding-top: 70px;
+  transform: translate(0em, 250px);
   margin-left: 105px;
 
   @media (min-width: 320px) {
-    margin-top: 470px;
+    transform: translate(0em, 140px);
+    margin-top: 100px;
   }
 
   @media (min-width: 900px) {
+    transform: translate(0em, 250px);
     margin-top: 270px;
   }
+}
+
+.projects-row {
+  transform: translate(0em, 10em);
 }
 
 .spacebook-hr {
@@ -98,6 +104,7 @@
   padding: 50px 20px;
   position: relative;
   font-weight: 440;
+
 
   .sb-video {
     width: 80%;
@@ -209,6 +216,10 @@
   transform: translate(0em, 2em);
   margin-left: 147px;
 
+  @media (max-width: 321px) {
+    transform: translate(-1.5em, 2em);
+ }
+
 
   .spacebook-github {
     margin-left: -138px;
@@ -223,29 +234,36 @@
 .woke-github {
   margin-top: 52px;
   margin-left: 45px;
-  // transform: translate(0em, 1.4em);
+  @media (max-width: 321px) {
+    transform: translate(-0.7em, -1em);
+ }
 }
 
 .notes-github {
   margin-top: 123px;
   justify-content: center;
   margin-left: 75px;
-  // transform: translate(0em, 3.5em);
+  @media (max-width: 321px) {
+    transform: translate(-0.7em, -1em);
+ }
 }
 
 @media (min-width: 320px) {
   .projects-row {
   padding-left: 32px;
   }
+
+  .column-a {
+    padding-right: 0px;
+  }
+  .card-a {
+    margin-right: 10px;
+    margin-left: 0px;
+    padding: 5px 0px;
+  }
 }
 
 @media (max-width: 649px) {
-  .card-a {
-    margin-right: -5px;
-    margin-left: -15px;
-    padding: 5px 3px;
-  }
-
   .projects-title {
     margin-left: 15px;
   }
@@ -292,6 +310,16 @@
   }
 }
 
+@media (max-width: 647px) {
+  .card-a {
+    margin-right: 3px;
+    margin-left: 15px;
+    padding: 5px 0px;
+    transform: translate(-0.7em);
+  }
+
+}
+
 @media (min-width: 650px) {
   .card-a {
     margin-right: 0px;
@@ -307,7 +335,6 @@
 @media (min-width: 1033px) {
   .projects-title {
     margin-left: 120px;
-    transform: translate(0em, 350px);
   }
 
   .projects-row {

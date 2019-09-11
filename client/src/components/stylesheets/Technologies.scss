@@ -9,13 +9,12 @@ hr {
 }
 
 .title {
-  margin-top: 45px;
   padding-top: 7px;
   font-size: 185%;
   font-weight: 400;
   margin-left: 105px;
   font-family: $main-font;
-  transform: translate(0em, 250px);
+  transform: translate(0em, 350px);
 }
 
 .column {
@@ -30,7 +29,7 @@ hr {
   display: block;
   justify-content: center;
   margin: auto;
-  transform: translate(0em, 250px);
+  transform: translate(0em, 400px);
 }
 
 .card {
@@ -62,18 +61,11 @@ hr {
   }
 }
 
-.planner-pic {
-  max-width: 280px;
-  max-height: 280px;
-  transform: translate(-20em, 7em);
-}
-
-
 @media screen and (min-width: 320px) {
   .column-i {
     margin-bottom: -13em;
-    padding-right: 42px;
-    padding-left: 42px;
+    padding-right: 34px;
+    padding-left: 34px;
   }
 
   .column-ii {
@@ -126,7 +118,6 @@ hr {
   .row {
     padding-left: 5px;
   }
-
 }
 
 @media (max-width: 986px) {
@@ -164,6 +155,16 @@ hr {
     padding-left: 150px;
   }
 
+  .planner-pic {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  .column-i {
+    margin-bottom: -13em;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
 }
 
 @media (min-width: 1004px) {
