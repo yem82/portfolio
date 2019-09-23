@@ -11,9 +11,15 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   .full-name {
     top: 10px;
     font-family: $main-font;
+    font-size: 7.4px;
+    letter-spacing: 0.35px;
+    margin-left: 20px;
+    transform:translate(-5px, 0em);
   }
 
   .menu {
+    margin-left: -22px;
+    transform:translate(-8px, 1.3em);
 
     a { color: rgba(29, 28, 27, 0.714);
       // color: rgb(89, 76, 71); brown colour
@@ -35,24 +41,14 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   }
 }
 
-@media(min-width: 300px) {
+@media(max-width: 338px) {
   .navigation{
 
-    .full-name {
-      font-size: 7.4px;
-      letter-spacing: 0.35px;
-      margin-left: 20px;
-      transform:translate(-5px, 0em);
-    }
-
     .menu {
-      margin-left: -22px;
-      transform:translate(-8px, 1.3em);
-
         li {
           font-size: 9.5px;
           padding: -5px;
-          padding-left: 4.1px;
+          padding-left: 7.7px;
         }
 
         .icon {
@@ -72,7 +68,7 @@ $main-font: 'Gotham SSm A','Gotham SSm B',Gotham,"Helvetica Neue",Helvetica,Aria
   .menu {
     li {
       font-size: 9.5px;
-      padding-left: 11px;
+      padding-left: 15px;
     }
 
     .icon {
