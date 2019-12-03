@@ -3,26 +3,6 @@ import './stylesheets/Form.scss';
 import Contact from '../assets/images/contact.svg'
 import axios from 'axios';
 
-function validate(firstname, lastname, email, message) {
-  const errors = [];
-
-  if (firstname === '' || lastname === '') {
-    errors.push("name fields can't be empty!");
-  }
-
-  if (email === '') {
-    errors.push("email can't be empty!");
-  }
-  if (email.split("").filter(x => x === "@").length !== 1 || email.indexOf(".") === -1) {
-    errors.push("email should contain '@' and at least one dot");
-  }
-
-  if (message === '') {
-    errors.push("message can't be empty!");
-  }
-
-  return errors;
-}
 class Form extends Component {
   constructor(props) {
     super(props);
@@ -48,7 +28,7 @@ class Form extends Component {
 
     const { firstname, lastname, email, subject, message } = this.state;
 
-    const errors = validate(firstname, lastname, email, message);
+    const errors = this.validate(firstname, lastname, email, message);
       if (errors.length > 0) {
         this.setState({ errors });
         return;
@@ -68,7 +48,27 @@ class Form extends Component {
     })
   };
 
-render() {
+  validate(firstname, lastname, email, message) {
+    const errors = [];
+
+    if (firstname === '' || lastname === '') {
+      errors.push("name fields can't be empty!");
+    }
+
+    if (email === '') {
+      errors.push("email can't be empty!");
+    }
+    if (email.split("").filter(x => x === "@").length !== 1 || email.indexOf(".") === -1) {
+      errors.push("email should contain '@' and at least one dot");
+    }
+
+    if (message === '') {
+      errors.push("message can't be empty!");
+    }
+    return errors;
+  }
+
+  render() {
     const { errors } = this.state
     return (
       <div>
@@ -82,7 +82,7 @@ render() {
           <p className="required">* required</p>
             <br/>
 
-          <div class="name-1">
+          <div className="name-1">
             <label className="first-name">*First name</label>
             <input
             className="form-text"
