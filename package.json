@@ -35,6 +35,6 @@
     "nodemailer": "^6.3.0",
     "nodemon": "^1.19.1",
     "sendgrid": "^4.2.0",
-    "serialize-javascript": "^2.1.2"
+    "serialize-javascript": ">=2.1.1"
   }
 }
