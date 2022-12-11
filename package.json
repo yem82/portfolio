@@ -30,7 +30,7 @@
     "create-react-app": "^3.1.1",
     "dotenv": "^8.0.0",
     "esm": "^3.2.25",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mailgun-js": "^0.22.0",
     "nodemailer": "^6.3.0",
     "nodemon": "^1.19.1",
